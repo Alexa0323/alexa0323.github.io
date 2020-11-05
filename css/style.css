@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+
+body {
+  color: #222;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 2;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+  grid-template-areas:
+  "introduction introduction"
+  "pictures     geography"
+  "pictures     people"
+  "pictures     economy"
+  "footer       footer"
+}
+
+header {
+  position: relative;
+  left: 16em;
+}
+
+h1 {
+  color: rgb(31,68,107); /* PR flag blue */
+  font-family: "Pacifico", cursive;
+  font-size: 60px;
+  margin: 0;
+}
+
+h2 {
+  color: rgb(31,68,107); /* PR flag blue */
+  font-size: 25px;
+  margin-top: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 200px
+}
+
+tr,
+th,
+td {
+  border: 1px solid #ccc
+}
+
+th {
+  background-color: #f3f3f3; /* light grey */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a,
+a:link,
+a:visited {
+  color: rgb(31,68,107); /* PR flag blue */
+}
+
+a:hover {
+  color: rgb(237,27,35); /* PR flag red */
+  border-bottom: 5px double rgb(31,68,107); /* PR flag blue */
+}
+
+a:active {
+  color: rgb(237,27,35); /* PR flag red */
+  border: 5px double rgb(31,68,107); /* PR flag blue */
+}
+
+section {
+  padding: 5px 15px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #eee;
+  font-size: 15px;
+  border: 3px double #bbb;
+  padding: 5px 10px;
+}
+
+nav {
+  grid-area: nav;
+  font-size: 20px;
+  background-color: #eee;
+  padding: 10px;
+  border: 3px double #bbb;
+}
+
+nav ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  position: relative;
+  left: 5em;
+}
+
+nav li {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+  color: rgb(237,27,35); /* PR flag red */
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(31,68,107); /* PR flag blue */
+  border-bottom: 5px double rgb(237,27,35); /* PR flag red */
+}
+
+nav a:active {
+  color: rgb(31,68,107); /* PR flag blue */
+  border: 5px double rgb(237,27,35); /* PR flag red */
+}
+
+#top {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#introduction {
+  grid-area: introduction;
+}
+
+#geography {
+  grid-area: geography;
+  border: 3px double #bbb;
+}
+
+#people-and-society {
+  grid-area: people;
+  border: 3px double #bbb;
+}
+
+#economy {
+  grid-area: economy;
+  border: 3px double #bbb;
+}
+
+#pictures {
+  grid-area: pictures;
+  padding: 0;
+  background-color: #eee;
+}
