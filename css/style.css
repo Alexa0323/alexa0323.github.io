@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Parisienne&display=swap');
+
+body {
+  color: #222;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 2;
+}
+
+#home main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-areas:
+  "portrait  hello"
+  "footer footer"
+}
+
+#portfolio main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  grid-template-areas:
+  "intro"
+  "on-cam"
+  "behind"
+  "footer"
+}
+
+#experiences main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  grid-template-areas:
+  "resume"
+  "education"
+  "work"
+  "skill"
+  "footer"
+
+}
+
+img {
+  width: 100%;
+  height: auto; /* cheat code from class :-) */
+}
+
+h1 {
+  color: #d8318a; /*hot pink */
+  font-family: "Parisienne", cursive;
+  font-size: 85px;
+  margin: 0;
+}
+
+footer {
+  grid-area: footer;
+  color: #f26c7d; /* middle pink */
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+nav {
+  grid-area: nav;
+  font-size: 20px;
+  padding: 0 5px 5px 5px;
+  margin: 0 0 20px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  position: relative;
+  left: 11em;
+}
+
+nav li {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #ffffff);
+  text-decoration: none;
+  padding: 0.5em;
+  border: 2px solid #f26c7d; /* middle pink */
+}
+
+
+nav a:link,
+nav a:visited {
+  color: #f26c7d;/* middle pink */
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #d8318a; /* hot pink */
+  border-bottom: 5px double #e37439; /* bright orange */
+}
+
+nav a:active {
+  color: #ff6fa5; /* hot pink */
+  border: 5px double #e37439; /* bright orange */
+}
+a,
+a:link,
+a:visited {
+  color: #d8318a; /* hot pink */
+}
+
+a:hover {
+  color: #f26c7d; /* middle pink */
+  border-bottom: 5px double #e37439; /* bright orange */
+}
+#home,
+#portfolio,
+#experiences {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#portrait {
+  grid-area: portrait;
+}
+
+#hello {
+  grid-area: hello;
+}
+
+#intro {
+  grid-area: intro;
+}
+
+#on-cam {
+  grid-area: on-cam;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "on-cam on-cam"
+  "a b"
+  "c d"
+}
+
+#a {
+  grid-area: a;
+}
+
+#b {
+  grid-area: b;
+}
+
+#c {
+  grid-area: c;
+}
+
+#d {
+  grid-area: d;
+}
+
+#e {
+  grid-area: e;
+}
+
+#f {
+  grid-area: f;
+}
+
+#g {
+  grid-area: g;
+}
+
+#h {
+  grid-area: h
+}
+
+#behind {
+  grid-area: behind;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "behind behind"
+  "e f"
+  "g h"
+}
+
+#resume {
+  grid-area: resume;
+}
+
+#education {
+  grid-area: education;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  grid-template-areas:
+  "ed ed"
+  "degree uni"
+}
+
+#work {
+  grid-area: work;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  grid-template-areas:
+  "history history"
+  "team     executive"
+  "edit     video"
+  "news     talent"
+}
+
+
+#skill {
+  grid-area: skill;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  grid-template-areas:
+  "prof prof"
+  "icon fluent"
+}
+
+#ed {
+  grid-area: ed;
+}
+
+#uni {
+  grid-area: uni;
+}
+
+#degree {
+  grid-area: degree;
+}
+
+#history {
+  grid-area: history;
+}
+
+#executive {
+  grid-area: executive;
+}
+
+#team {
+  grid-area: team;
+}
+
+#video {
+  grid-area: video;
+}
+
+#edit {
+  grid-area: edit;
+}
+
+#talent {
+  grid-area: talent;
+}
+
+#news {
+  grid-area: news;
+}
+
+#prof {
+  grid-area: prof;
+}
+
+#fluent {
+  grid-area: fluent;
+}
+
+#icon {
+  grid-area: icon;
+}
